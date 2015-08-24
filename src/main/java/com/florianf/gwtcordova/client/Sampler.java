@@ -82,7 +82,8 @@ public class Sampler extends Composite {
         listPanel.add(selector);
 
 //        addCategory("paper", "Paper Elements");
-        addSample("Device", new ButtonSample(), "ButtonSample");
+        addSample("Button", new ButtonSample(), "ButtonSample");
+        addSample("Device", new DeviceSample(), "DeviceSample");
         addSample("CheckBox", new CheckboxSample(), "CheckboxSample");
 //        addSample("Dialog", new DialogSample(), "paper", "DialogSample");
 //        // not suitable for current showcase. In original showcase it works inside iframe
