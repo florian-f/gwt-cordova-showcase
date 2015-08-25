@@ -1,11 +1,8 @@
 // fremdcode!
-package com.florianf.gwtcordova.client;
+package com.florianf.gwtcordovashowcase.client;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
 
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.dom.client.SpanElement;
@@ -24,9 +21,6 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
 
-import com.vaadin.polymer.Polymer;
-import com.vaadin.polymer.elemental.Function;
-import com.vaadin.polymer.iron.widget.IronCollapse;
 import com.vaadin.polymer.iron.widget.IronSelector;
 import com.vaadin.polymer.paper.widget.PaperButton;
 import com.vaadin.polymer.paper.widget.PaperDialog;
@@ -66,7 +60,6 @@ public class Sampler extends Composite {
     private List<Item> items = new ArrayList<>();
     private Item currentItem;
     private IronSelector selector = new IronSelector("");
-
     @UiField Style style;
 
     @UiField PaperDrawerPanel drawerPanel;

@@ -4,7 +4,7 @@
              xmlns:i='urn:import:com.vaadin.polymer.iron.widget'
         >
 <!--fremdcode!!-->
-    <ui:style type="com.florianf.gwtcordova.client.Sampler.Style">
+    <ui:style type="com.florianf.gwtcordovashowcase.client.Sampler.Style">
         @external .iron-selected, .paper-toast-open;
 
         .toolbar {
