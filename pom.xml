@@ -115,6 +115,7 @@
         <!-- Plugin configuration. There are many available options, 
              see gwt-maven-plugin documentation at codehaus.org -->
         <configuration>
+          <style>PRETTY</style>
           <jsInteropMode>JS</jsInteropMode>
           <modules>
             <module>com.florianf.gwtcordovashowcase.GwtCordovaShowcase</module>

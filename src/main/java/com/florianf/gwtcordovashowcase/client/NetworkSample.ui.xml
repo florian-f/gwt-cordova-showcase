@@ -1,0 +1,12 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:p='urn:import:com.vaadin.polymer.paper.widget'>
+
+  <g:HTMLPanel>
+    <!--<div>-->
+    <h4>Network</h4>
+
+    <g:FlowPanel ui:field="networkPanel"/>
+
+  </g:HTMLPanel>
+</ui:UiBinder>

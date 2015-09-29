@@ -75,9 +75,9 @@ public class Sampler extends Composite {
         listPanel.add(selector);
 
 //        addCategory("paper", "Paper Elements");
-        addSample("Button", new ButtonSample(), "ButtonSample");
+//        addSample("Button", new ButtonSample(), "ButtonSample");
         addSample("Device", new DeviceSample(), "DeviceSample");
-        addSample("CheckBox", new CheckboxSample(), "CheckboxSample");
+        addSample("Network", new NetworkSample(), "NetworkSample");
 //        addSample("Dialog", new DialogSample(), "paper", "DialogSample");
 //        // not suitable for current showcase. In original showcase it works inside iframe
 //        // addSample("DrawerPanel", new DrawerPanelSample(), "paper", "DrawerPanelSample");
@@ -130,7 +130,7 @@ public class Sampler extends Composite {
 //        Window.open(REPO_PATH + currentItem.category + "/" + currentItem.path + ".java", "_blank", "");
 //    }
 
-    @UiHandler({"logo1", "logo2", "logo3"})
+    @UiHandler({"logo2", "logo3"})
     protected void onLogo(ClickEvent e) {
         Window.open(((Widget)e.getSource()).getElement().getAttribute("url"), "_blank", "");
         closeMenu();
@@ -178,7 +178,7 @@ public class Sampler extends Composite {
     private void selectItem(String hash) {
         String tmp[] = hash != null ? hash.split("/") : null;
         if (tmp == null || tmp.length < 2) {
-            tmp = new String[]{"paper", "ButtonSample"};
+            tmp = new String[]{"paper", "DeviceSample"};
         }
         for (Item i : items) {
             if (i.path == tmp[1]) {

@@ -94,7 +94,7 @@
                     <p:PaperToolbar addStyleNames="{style.toolbar} ">
                     <p:PaperFab ui:field="logo3" icon="polymer" attributes="mini url:http://polymer-project.org" addStyleNames="iconpolymer"></p:PaperFab>
                     <p:PaperFab ui:field="logo2" src="img/gwt.png" attributes="mini url:http://gwtproject.org" addStyleNames="icongwt"></p:PaperFab>
-                    <p:PaperFab ui:field="logo1" src="img/vaadin.png" attributes="mini url:http://vaadin.com" addStyleNames="iconvaadin"></p:PaperFab>
+                    <!--<p:PaperFab ui:field="logo1" src="img/vaadin.png" attributes="mini url:http://vaadin.com" addStyleNames="iconvaadin"></p:PaperFab>-->
                     </p:PaperToolbar>
                     <g:FlowPanel ui:field="listPanel" addStyleNames="{style.list}"/>
                 </p:PaperHeaderPanel>
@@ -114,29 +114,10 @@
         </p:PaperDrawerPanel>
 
         <p:PaperDialog ui:field="about" modal="true" >
-            <h2>About GWT-Polymer-Elements</h2>
-             <p>
-               GWT-Polymer-Elements is a library developed in Vaadin Labs. It allows to use Polymer Elements in GWT projects.
-             </p>
-             <p>
-               The source code of the library has been enterely generated with Vaadin gwt-api-generator, an utility able to inspect polymer webcomponents and emit GWT java files.
-             </p>
-             <p>
-               Since GWT, Gwt-Api-Generator and Gwt-Polymer-Elements are Apache Licensed, and Polymer Elements is BSD Licensed, you have a full open-source stack to develop modern Ajax applications in Java.
-             </p>
-             <p>
-               The project does not maintain any java code (except the demo) and it is actually a 'node' script able to download components, generate java wrappers, and eventually compile and upload generated .jar to maven repos.
-             </p>
-             <p>
-               The main goal of the library is to reuse in GWT external components utilising modern techniques like 'JsInterop' and 'Hydrolysis', instead of the tedious classic way: learn 3rd party JS APIs and write dozens of java classes by hand.
-             </p>
-             <p>
-               Web components is a technology based on new standards, hence it is thought in the present for the future.
-               We are aware about performance issues in browsers not already implementing them, but browser vendors would finally solve it.
-             </p>
-             <p>
-               Anyway, we believe that it is worth to start experimenting and learning web components sooner, and contributing with the growing community around these new trends.
-             </p>
+            <h2>About gwt-cordova</h2>
+              <p>
+              This Demo shows how to use Apache Cordova with modern gwt. It is based on vaadin's demo for gwt-polymer-elements.
+              </p>
             <div class="buttons">
                 <p:PaperButton attributes="dialog-dismiss"  raised="true">OK</p:PaperButton>
             </div>
