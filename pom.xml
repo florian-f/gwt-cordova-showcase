@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.florianf</groupId>
-  <artifactId>GwtCordovaShowcase</artifactId>
+  <groupId>com.florianf.gwtcordova.showcase</groupId>
+  <artifactId>gwtcordova-showcase</artifactId>
   <packaging>war</packaging>
   <version>0.1-SNAPSHOT</version>
-  <name>com.florianf.gwtcordovashowcase.GwtCordovaShowcase</name>
+  <name>GWT Cordova Demo</name>
 
   <properties>
     <!-- Convenience property to set the GWT version -->
@@ -39,11 +39,11 @@
     </repository>
 
     <!--gwtcordova-->
-    <repository>
-      <id>repo</id>
-      <!--<name>com.florianf.gwtcordova.GwtCordova</name>-->
-      <url>file:${project.basedir}/repo</url>
-    </repository>
+    <!--<repository>-->
+      <!--<id>repo</id>-->
+      <!--&lt;!&ndash;<name>com.florianf.gwtcordova.GwtCordova</name>&ndash;&gt;-->
+      <!--<url>file:${project.basedir}/repo</url>-->
+    <!--</repository>-->
   </repositories>
 
   <dependencyManagement>
@@ -90,11 +90,14 @@
 
     <!--gwtcordova-->
     <dependency>
+      <!--<groupId>com.florianf.gwtcordova</groupId>-->
+      <!--<artifactId>GwtCordova</artifactId>-->
+      <!--&lt;!&ndash;<version>0.1-SNAPSHOT</version>&ndash;&gt;-->
+      <!--<version>0.1</version>-->
       <groupId>com.florianf.gwtcordova</groupId>
-      <artifactId>GwtCordova</artifactId>
-      <!--<version>0.1-SNAPSHOT</version>-->
+      <artifactId>gwtcordova</artifactId>
       <version>0.1</version>
-
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
@@ -115,8 +118,12 @@
         <!-- Plugin configuration. There are many available options, 
              see gwt-maven-plugin documentation at codehaus.org -->
         <configuration>
-          <style>PRETTY</style>
           <jsInteropMode>JS</jsInteropMode>
+          <disableCastChecking>true</disableCastChecking>
+          <disableClassMetadata>true</disableClassMetadata>
+          <enableAssertions>false</enableAssertions>
+          <closureCompiler>true</closureCompiler>
+          <style>PRETTY</style>
           <modules>
             <module>com.florianf.gwtcordovashowcase.GwtCordovaShowcase</module>
           </modules>

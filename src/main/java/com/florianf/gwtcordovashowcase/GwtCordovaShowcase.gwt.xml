@@ -2,7 +2,7 @@
 <!-- Custom-built GWT. You probably want to uncomment the DOCTYPE and point it to your GWT checkout
 <!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 0.0.0//EN" "file:///path/to/gwt/checkout/distro-source/core/src/gwt-module.dtd">
 -->
-<module>
+<module rename-to="gwtcordovashowcase">
 
   <inherits name='com.google.gwt.user.User'/>
   <inherits name="com.vaadin.polymer.Elements"/>
