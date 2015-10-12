@@ -75,7 +75,7 @@ public class Sampler extends Composite {
         listPanel.add(selector);
 
 //        addCategory("paper", "Paper Elements");
-//        addSample("Button", new ButtonSample(), "ButtonSample");
+        addSample("Volume Button", new VolumeButtonSample(), "VolumeButtonSample");
         addSample("Device", new DeviceSample(), "DeviceSample");
         addSample("Network", new NetworkSample(), "NetworkSample");
 //        addSample("Dialog", new DialogSample(), "paper", "DialogSample");
