@@ -14,14 +14,14 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 
 public class VolumeButtonSample extends Composite {
-    interface ButtonSampleUiBinder extends UiBinder<HTMLPanel, VolumeButtonSample> {
+    interface VolumeButtonSampleUiBinder extends UiBinder<HTMLPanel, VolumeButtonSample> {
     }
 
     @UiField
     SpanElement volumeButton;
     int volumeButtonValue = 0;
 
-    private static ButtonSampleUiBinder ourUiBinder = GWT.create(ButtonSampleUiBinder.class);
+    private static VolumeButtonSampleUiBinder ourUiBinder = GWT.create(VolumeButtonSampleUiBinder.class);
 
     public VolumeButtonSample() {
         initWidget(ourUiBinder.createAndBindUi(VolumeButtonSample.this));
