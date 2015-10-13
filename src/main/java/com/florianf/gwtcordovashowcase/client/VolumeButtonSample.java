@@ -27,19 +27,8 @@ public class VolumeButtonSample extends Composite {
         initWidget(ourUiBinder.createAndBindUi(VolumeButtonSample.this));
         VolumeButton volumeButtonWidget = new VolumeButton();
 
-        volumeButtonWidget.addVolumeDownButtonPressedHandler(new VolumeDownButtonPressedEventHandler() {
-            @Override
-            public void onVolumeDownButtonPressed(VolumeDownButtonPressedEvent volumeDownButtonPressedEvent) {
-                volumeButton.setInnerText("" + volumeButtonValue--);
+        volumeButtonWidget.addVolumeDownButtonPressedHandler(vd -> volumeButton.setInnerText("" + --volumeButtonValue));
 
-            }
-        });
-
-        volumeButtonWidget.addVolumeUpButtonPressedHandler(new VolumeUpButtonPressedEventHandler() {
-            @Override
-            public void onVolumeUpButtonPressed(VolumeUpButtonPressedEvent volumeUpButtonPressedEvent) {
-                volumeButton.setInnerText(""+ volumeButtonValue++);
-            }
-        });
+        volumeButtonWidget.addVolumeUpButtonPressedHandler(vu -> volumeButton.setInnerText(""+ ++volumeButtonValue));
     }
 }

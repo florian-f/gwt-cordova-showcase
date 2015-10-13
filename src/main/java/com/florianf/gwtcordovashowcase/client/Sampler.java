@@ -67,7 +67,7 @@ public class Sampler extends Composite {
     @UiField HTMLPanel content;
     @UiField SpanElement currentLabel;
     @UiField PaperDialog about;
-    @UiField PaperButton xmlButton;
+//    @UiField PaperButton xmlButton;
 
     public Sampler() {
         initWidget(ourUiBinder.createAndBindUi(this));
@@ -237,10 +237,18 @@ public class Sampler extends Composite {
             History.newItem(path, false);
 
             currentLabel.setInnerText(name);
-            xmlButton.setVisible(uixml);
+//            xmlButton.setVisible(uixml);
 //            setOpened(collapse, true);
             closeMenu();
         }
+    }
+
+    @UiHandler("menu")
+    public void onMenu(ClickEvent clickEvent) {
+        if (drawerPanel.getNarrow()) {
+            return;
+        }
+        drawerPanel.openDrawer();
     }
 
     private void closeMenu() {

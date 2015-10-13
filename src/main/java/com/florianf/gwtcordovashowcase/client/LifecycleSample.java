@@ -29,8 +29,8 @@ public class LifecycleSample extends Composite {
 
         CordovaEvents cordovaEvents = new CordovaEvents();
 
-        cordovaEvents.addPauseHandler(pauseEvent -> pauseFired.setInnerText("" + pauseCount++));
+        cordovaEvents.addPauseHandler(pauseEvent -> pauseFired.setInnerText("" + ++pauseCount));
 
-        cordovaEvents.addResumeHandler(resumeEvent -> resumeFired.setInnerText("" + resumeCount++));
+        cordovaEvents.addResumeHandler(resumeEvent -> resumeFired.setInnerText("" + ++resumeCount));
     }
 }

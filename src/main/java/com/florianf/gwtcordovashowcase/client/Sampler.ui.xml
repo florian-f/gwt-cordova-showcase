@@ -102,10 +102,10 @@
             <div main="">
                 <p:PaperHeaderPanel mode="seamed">
                     <p:PaperToolbar addStyleNames="{style.toolbar}">
-                        <p:PaperIconButton icon="menu" attributes="paper-drawer-toggle" />
+                        <p:PaperIconButton ui:field="menu" icon="menu" attributes="paper-drawer-toggle" />
                         <span ui:field="currentLabel" class="flex {style.current}"></span>
-                        <p:PaperButton ui:field="xmlButton" addStyleNames="{style.buttons}"><i:IronIcon icon="launch"/>.ui.xml</p:PaperButton>
-                        <p:PaperButton ui:field="javaButton" addStyleNames="{style.buttons}"><i:IronIcon icon="launch"/>.java</p:PaperButton>
+                        <!--<p:PaperButton ui:field="xmlButton" addStyleNames="{style.buttons}"><i:IronIcon icon="launch"/>.ui.xml</p:PaperButton>-->
+                        <!--<p:PaperButton ui:field="javaButton" addStyleNames="{style.buttons}"><i:IronIcon icon="launch"/>.java</p:PaperButton>-->
                         <p:PaperIconButton ui:field="help" icon="help"/>
                     </p:PaperToolbar>
                     <g:HTMLPanel ui:field="content" addStyleNames="{style.panel}"/>
