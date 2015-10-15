@@ -79,6 +79,7 @@ public class Sampler extends Composite {
         addSample("Device", new DeviceSample(), "DeviceSample");
         addSample("Network", new NetworkSample(), "NetworkSample");
         addSample("Lifecycle Events", new LifecycleSample(), "LifecycleSample");
+        addSample("Camera", new CameraSample(), "CameraSample");
 //        // not suitable for current showcase. In original showcase it works inside iframe
 //        // addSample("DrawerPanel", new DrawerPanelSample(), "paper", "DrawerPanelSample");
 //        addSample("Floating Button", new FabSample(), "paper", "FabSample");
