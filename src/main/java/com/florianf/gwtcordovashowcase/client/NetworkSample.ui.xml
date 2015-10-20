@@ -4,9 +4,10 @@
 
   <g:HTMLPanel>
     <!--<div>-->
-    <h4>Network</h4>
-
+    <h3>Network</h3>
+    <p:PaperMaterial elevation="2">
     <g:FlowPanel ui:field="networkPanel"/>
+    </p:PaperMaterial>
 
   </g:HTMLPanel>
 </ui:UiBinder>

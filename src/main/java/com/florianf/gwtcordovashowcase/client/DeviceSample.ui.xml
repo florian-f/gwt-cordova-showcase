@@ -6,10 +6,10 @@
 
   <g:HTMLPanel>
     <!--<div>-->
-      <h4>Device</h4>
+      <h3>Device</h3>
       <!--<div class="list short">-->
     <!--<g:FlowPanel ui:field="listPanel" addStyleNames="{style.list}"/>-->
-    <g:FlowPanel ui:field="devicePanel"/>
+    <p:PaperMaterial ui:field="devicePanel" elevation="2"></p:PaperMaterial>
 
   </g:HTMLPanel>
 </ui:UiBinder>

@@ -20,7 +20,6 @@ public class VolumeButtonSample extends Composite {
     @UiField
     SpanElement volumeButton;
     int volumeButtonValue = 0;
-
     private static VolumeButtonSampleUiBinder ourUiBinder = GWT.create(VolumeButtonSampleUiBinder.class);
 
     public VolumeButtonSample() {

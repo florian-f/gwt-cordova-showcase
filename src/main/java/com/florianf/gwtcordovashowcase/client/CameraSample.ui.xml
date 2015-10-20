@@ -5,95 +5,34 @@
     >
 
 
+  <g:HTMLPanel addStyleNames="button-sample">
 
-    <g:HTMLPanel addStyleNames="button-sample">
+    <style is="custom-style">
+      .button-sample .horizontal-section {
+      min-width: 130px;
+      }
 
-        <style is="custom-style">
-            .button-sample .horizontal-section {
-            min-width: 130px;
-            }
+      .pic {
+      width: 100%;
+      }
+    </style>
 
-            .button-sample paper-button {
-            display: block;
-            margin-bottom: 24px;
-            }
+    <div class="horizontal-section-container  center-justified layout">
+      <h3>Camera Sample</h3>
 
-            .button-sample paper-button.colorful {
-            color: #4285f4;
-            }
-
-            .button-sample paper-button[raised].colorful {
-            background: #4285f4;
-            color: #fff;
-            }
-
-            .button-sample paper-button[toggles] {
-            transition: background-color 0.3s;
-            }
-
-            .button-sample paper-button[toggles][active] {
-            background-color: rgba(0, 0, 0, 0.25);
-            }
-
-            .button-sample paper-button[toggles][active].colorful {
-            background-color: rgba(66, 133, 244, 0.25);
-            }
-
-            .button-sample paper-button[toggles][active][raised].colorful {
-            background-color: rgba(66, 133, 244, 0.75);
-            }
-
-            .button-sample paper-button.blue {
-            color: var(--paper-light-blue-500);
-            --paper-button-flat-focus-color: var(--paper-light-blue-50);
-            }
-            .button-sample paper-button.blue:hover {
-            background: var(--paper-light-blue-50);
-            }
-            .button-sample paper-button.red {
-            color: var(--paper-red-500);
-            --paper-button-flat-focus-color: var(--paper-red-50);
-            }
-            .button-sample paper-button.red:hover {
-            background: var(--paper-red-50);
-            }
-            .button-sample paper-button.green {
-            color: var(--paper-green-500);
-            --paper-button-flat-focus-color: var(--paper-green-50);
-            }
-            .button-sample paper-button.green:hover {
-            background: var(--paper-green-50);
-            }
-            .button-sample paper-button.orange {
-            color: var(--paper-orange-500);
-            --paper-button-flat-focus-color: var(--paper-orange-50);
-            }
-            .button-sample paper-button.orange:hover {
-            background: var(--paper-orange-50);
-            }
-
-            .button-sample paper-button.hover:hover {
-            background: #eee;
-            }
-
-            .button-sample paper-button.ripple::shadow paper-ripple {
-            color: var(--paper-pink-a200);
-            }
-
-            .button-sample paper-button.ripple paper-ripple {
-            color: var(--paper-pink-a200);
-            }
-        </style>
-
-        <div class="horizontal-section-container  center-justified layout">
-            <div>
-                <div class="horizontal-section">
-                    <h4>Camera Sample</h4><br/>
-                    <div><p:PaperButton ui:field="cameraButton" raised="true">Take Picture</p:PaperButton> </div>
-                    <div><span ui:field="text"></span> </div>
-                    <img ui:field="myImage"/>
-                </div>
-            </div>
+      <p:PaperMaterial elevation="2">
+        <div class="horizontal-section">
+        <p:PaperItem>
+            <p:PaperButton ui:field="cameraButton" raised="true">take a picture</p:PaperButton>
+        </p:PaperItem>
+          <p:PaperItem>
+            <span ui:field="text"></span>
+          </p:PaperItem>
+          <p:PaperItem>
+          <img class="pic" ui:field="myImage"/>
+          </p:PaperItem>
         </div>
-    </g:HTMLPanel>
+      </p:PaperMaterial>
+    </div>
+  </g:HTMLPanel>
 </ui:UiBinder>

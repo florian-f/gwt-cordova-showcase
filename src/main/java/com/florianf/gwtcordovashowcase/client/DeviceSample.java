@@ -9,6 +9,7 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.vaadin.polymer.paper.widget.PaperItem;
+import com.vaadin.polymer.paper.widget.PaperMaterial;
 
 /**
  * Created by florian on 24.08.15.
@@ -22,7 +23,7 @@ public class DeviceSample extends Composite {
     Device device;
 
     @UiField
-    FlowPanel devicePanel;
+    PaperMaterial devicePanel;
 
     public DeviceSample() {
         initWidget(deviceSampleUiBinder.createAndBindUi(DeviceSample.this));
