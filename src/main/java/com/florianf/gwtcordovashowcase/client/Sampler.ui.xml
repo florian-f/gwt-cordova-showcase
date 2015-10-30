@@ -93,24 +93,37 @@
                 <p:PaperHeaderPanel mode="seamed">
                     <p:PaperToolbar addStyleNames="{style.toolbar} ">
                     <p:PaperFab ui:field="logo3" icon="polymer" attributes="mini url:http://polymer-project.org" addStyleNames="iconpolymer"></p:PaperFab>
-                    <p:PaperFab ui:field="logo2" src="img/gwt.png" attributes="mini url:http://gwtproject.org" addStyleNames="icongwt"></p:PaperFab>
+                    <p:PaperFab ui:field="logo2" icon="polymer" attributes="mini url:http://polymer-project.org" addStyleNames="iconpolymer"></p:PaperFab>
+
+                      <!--<p:PaperFab ui:field="logo2" src="img/gwt.png" attributes="mini url:http://gwtproject.org" addStyleNames="icongwt"></p:PaperFab>-->
                     <!--<p:PaperFab ui:field="logo1" src="img/vaadin.png" attributes="mini url:http://vaadin.com" addStyleNames="iconvaadin"></p:PaperFab>-->
                     </p:PaperToolbar>
                     <g:FlowPanel ui:field="listPanel" addStyleNames="{style.list}"/>
                 </p:PaperHeaderPanel>
             </div>
-            <div main="">
-                <p:PaperHeaderPanel mode="seamed">
-                    <p:PaperToolbar addStyleNames="{style.toolbar}">
-                        <p:PaperIconButton ui:field="menu" icon="menu" attributes="paper-drawer-toggle" />
-                        <span ui:field="currentLabel" class="flex {style.current}"></span>
-                        <!--<p:PaperButton ui:field="xmlButton" addStyleNames="{style.buttons}"><i:IronIcon icon="launch"/>.ui.xml</p:PaperButton>-->
-                        <!--<p:PaperButton ui:field="javaButton" addStyleNames="{style.buttons}"><i:IronIcon icon="launch"/>.java</p:PaperButton>-->
-                        <p:PaperIconButton ui:field="help" icon="help"/>
-                    </p:PaperToolbar>
-                    <g:HTMLPanel ui:field="content" addStyleNames="{style.panel}"/>
-                </p:PaperHeaderPanel>
-            </div>
+          <div main="">
+            <p:PaperHeaderPanel mode="seamed">
+              <p:PaperToolbar addStyleNames="{style.toolbar}">
+                <p:PaperIconButton ui:field="menu" icon="menu" attributes="paper-drawer-toggle" />
+                <span ui:field="currentLabel" class="{style.current}"></span>
+                <span class="flex"></span>
+                <p:PaperButton ui:field="help" addStyleNames="{style.buttons}"><i:IronIcon icon="help"/>About</p:PaperButton>
+              </p:PaperToolbar>
+              <g:HTMLPanel ui:field="content" addStyleNames="{style.panel}"/>
+            </p:PaperHeaderPanel>
+          </div>
+            <!--<div main="">-->
+                <!--<p:PaperHeaderPanel mode="seamed">-->
+                    <!--<p:PaperToolbar addStyleNames="{style.toolbar}">-->
+                        <!--&lt;!&ndash;<p:PaperIconButton ui:field="menu" icon="menu" attributes="paper-drawer-toggle" />&ndash;&gt;-->
+                        <!--<span ui:field="currentLabel" class="flex {style.current}"></span>-->
+                        <!--&lt;!&ndash;<p:PaperButton ui:field="xmlButton" addStyleNames="{style.buttons}"><i:IronIcon icon="launch"/>.ui.xml</p:PaperButton>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<p:PaperButton ui:field="javaButton" addStyleNames="{style.buttons}"><i:IronIcon icon="launch"/>.java</p:PaperButton>&ndash;&gt;-->
+                        <!--<p:PaperIconButton ui:field="help" icon="help"/>-->
+                    <!--</p:PaperToolbar>-->
+                    <!--<g:HTMLPanel ui:field="content" addStyleNames="{style.panel}"/>-->
+                <!--</p:PaperHeaderPanel>-->
+            <!--</div>-->
         </p:PaperDrawerPanel>
 
         <p:PaperDialog ui:field="about" modal="true" >

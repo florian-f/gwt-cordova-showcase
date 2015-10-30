@@ -22,10 +22,7 @@ import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
 
 import com.vaadin.polymer.iron.widget.IronSelector;
-import com.vaadin.polymer.paper.widget.PaperButton;
-import com.vaadin.polymer.paper.widget.PaperDialog;
-import com.vaadin.polymer.paper.widget.PaperDrawerPanel;
-import com.vaadin.polymer.paper.widget.PaperItem;
+import com.vaadin.polymer.paper.widget.*;
 
 public class Sampler extends Composite {
 
@@ -67,6 +64,7 @@ public class Sampler extends Composite {
     @UiField HTMLPanel content;
     @UiField SpanElement currentLabel;
     @UiField PaperDialog about;
+
 //    @UiField PaperButton xmlButton;
 
     public Sampler() {
@@ -243,10 +241,10 @@ public class Sampler extends Composite {
             closeMenu();
         }
     }
-
+//
     @UiHandler("menu")
     public void onMenu(ClickEvent clickEvent) {
-        if (drawerPanel.getNarrow()) {
+        if (!drawerPanel.getNarrow()) {
             return;
         }
         drawerPanel.openDrawer();

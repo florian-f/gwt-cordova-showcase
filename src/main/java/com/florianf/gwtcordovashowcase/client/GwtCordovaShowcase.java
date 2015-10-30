@@ -25,9 +25,34 @@ public class GwtCordovaShowcase implements EntryPoint {
             }
         });
 
+//        Polymer.importHref(Arrays.asList(
+//                "iron-icons/iron-icons.html",
+//                PaperIconItemElement.SRC,
+//                PaperRippleElement.SRC,
+//                IronIconElement.SRC,
+//                PaperDrawerPanelElement.SRC,
+//                PaperHeaderPanelElement.SRC,
+//                PaperToolbarElement.SRC,
+//                PaperFabElement.SRC,
+//                PaperDialogElement.SRC,
+//                PaperTextareaElement.SRC,
+//                PaperInputElement.SRC,
+//                PaperButtonElement.SRC,
+//                PaperCheckboxElement.SRC
+        Polymer.importHref("paper-styles");
+
+        // Styles for paper examples
+        Polymer.importHref("paper-styles/demo-pages.html");
+
+        // - Iconsets must be loaded before using any component depending on them
+        //   Iron comes with the collections:
+        //   communication, device, editor, hardware, image, iron, maps, notifications, social.
+        // - Animation must be loaded at the beginning as wll
         Polymer.importHref(Arrays.asList(
                 "iron-icons/iron-icons.html",
-                PaperIconItemElement.SRC,
+                "iron-icons/communication-icons.html",
+                "iron-flex-layout/iron-flex-layout.html",
+                "neon-animation/neon-animations.html",
                 PaperRippleElement.SRC,
                 IronIconElement.SRC,
                 PaperDrawerPanelElement.SRC,
@@ -37,8 +62,10 @@ public class GwtCordovaShowcase implements EntryPoint {
                 PaperDialogElement.SRC,
                 PaperTextareaElement.SRC,
                 PaperInputElement.SRC,
+                PaperIconButtonElement.SRC,
                 PaperButtonElement.SRC,
-                PaperCheckboxElement.SRC
+                PaperCheckboxElement.SRC,
+                PaperItemElement.SRC
         ), arg -> {
             startApplication();
             return null;
