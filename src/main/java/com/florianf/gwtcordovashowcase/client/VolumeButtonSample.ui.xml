@@ -5,23 +5,17 @@
     >
 
 
+  <g:HTMLPanel>
 
-    <g:HTMLPanel addStyleNames="button-sample">
-
-        <style is="custom-style">
-
-        </style>
-
-        <div class="horizontal-section-container  center-justified layout">
-            <div>
-                <h3>Volume Button</h3><br/>
-                <p:PaperMaterial elevation="2">
-                <div class="horizontal-section">
-                    <p:PaperItem>Volume:</p:PaperItem>
-                    <p:PaperItem><div><span ui:field="volumeButton">0</span></div><br/></p:PaperItem>
-                </div>
-                </p:PaperMaterial>
-            </div>
-        </div>
-    </g:HTMLPanel>
+        <h3>Volume Button</h3>
+        <p:PaperMaterial elevation="2" addStyleNames="style.item">
+            <p:PaperItem>Volume:</p:PaperItem>
+            <p:PaperItem>
+              <div>
+                <span ui:field="volumeButton">0</span>
+              </div>
+              <!--<br/>-->
+            </p:PaperItem>
+        </p:PaperMaterial>
+  </g:HTMLPanel>
 </ui:UiBinder>

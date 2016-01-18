@@ -5,16 +5,14 @@
     >
 
 
-  <g:HTMLPanel addStyleNames="button-sample">
+  <g:HTMLPanel>
 
     <style is="custom-style">
     </style>
 
-    <div class="horizontal-section-container  center-justified layout">
       <h3>Lifecycle Events</h3>
       <p:PaperMaterial elevation="2">
         <div>
-          <div class="horizontal-section">
             <p:PaperItem>
               <h4>Pause:</h4>
             </p:PaperItem>
@@ -27,9 +25,7 @@
             <p:PaperItem>
               <span ui:field="resumeFired"></span>
             </p:PaperItem>
-          </div>
         </div>
       </p:PaperMaterial>
-    </div>
   </g:HTMLPanel>
 </ui:UiBinder>

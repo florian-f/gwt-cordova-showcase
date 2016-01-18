@@ -32,24 +32,17 @@ public class Sampler extends Composite {
     }
 
     interface Style extends CssResource {
-        String toolbar();
-        String category();
-        String item();
-        String current();
-        String buttons();
+
         String list();
 
-        String panel();
-
-        String title();
+        String item();
 
         @ClassName("iron-selected")
         String ironSelected();
 
-        @ClassName("paper-toast-open")
-        String paperToastOpen();
+//        @ClassName("paper-toast-open")
+//        String paperToastOpen();
     }
-
     private static SamplerUiBinder ourUiBinder = GWT.create(SamplerUiBinder.class);
 
 //    private Map<String, IronSelector> selectorMap = new HashMap<>();
@@ -57,6 +50,7 @@ public class Sampler extends Composite {
     private List<Item> items = new ArrayList<>();
     private Item currentItem;
     private IronSelector selector = new IronSelector("");
+
     @UiField Style style;
 
     @UiField PaperDrawerPanel drawerPanel;
@@ -72,9 +66,12 @@ public class Sampler extends Composite {
 
         listPanel.add(selector);
 
+        DeviceSample deviceSample = new DeviceSample();
+        content.add(deviceSample);
+
+        addSample("Device", deviceSample, "DeviceSample");
 //        addCategory("paper", "Paper Elements");
         addSample("Volume Button", new VolumeButtonSample(), "VolumeButtonSample");
-        addSample("Device", new DeviceSample(), "DeviceSample");
         addSample("Network", new NetworkSample(), "NetworkSample");
         addSample("Lifecycle Events", new LifecycleSample(), "LifecycleSample");
         addSample("Camera", new CameraSample(), "CameraSample");
@@ -129,11 +126,11 @@ public class Sampler extends Composite {
 //        Window.open(REPO_PATH + currentItem.category + "/" + currentItem.path + ".java", "_blank", "");
 //    }
 
-    @UiHandler({"logo2", "logo3"})
-    protected void onLogo(ClickEvent e) {
-        Window.open(((Widget)e.getSource()).getElement().getAttribute("url"), "_blank", "");
-        closeMenu();
-    }
+//    @UiHandler({"logo2", "logo3"})
+//    protected void onLogo(ClickEvent e) {
+//        Window.open(((Widget)e.getSource()).getElement().getAttribute("url"), "_blank", "");
+//        closeMenu();
+//    }
     @UiHandler("help")
     protected void onHelp(ClickEvent e) {
         about.open();
@@ -167,7 +164,7 @@ public class Sampler extends Composite {
         // FIXME(manolo) for some reason certain examples only work well when they
         // have been attached previously, or we go directly to it (hashfragment)
         // IconButtonSample FabSample ToolbarSample PaperJavaAPI Tabs
-        content.add(sample);
+//        content.add(sample);
 //        IronCollapse collapse = collapseMap.get(category);
 //        IronSelector selector = selectorMap.get(category);
         items.add(new Item(path, sample, name, hasxml));

@@ -3,113 +3,58 @@
              xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
              xmlns:i='urn:import:com.vaadin.polymer.iron.widget'
         >
-<!--fremdcode!!-->
-    <ui:style type="com.florianf.gwtcordovashowcase.client.Sampler.Style">
-        @external .iron-selected, .paper-toast-open;
+  <ui:style type="com.florianf.gwtcordovashowcase.client.Sampler.Style">
+  @external .iron-selected;
 
-        .toolbar {
-            background: #00796B !important;
-        }
-        .toolbar > div {
-           justify-content: center;
-        }
-        .toolbar paper-fab {
-           margin: 5px;
-        }
+    /*.paper-drawer-panel .iron-selected {*/
+      /*background-color: #3F51B5;*/
+      /*color: #fff;*/
+    /*}*/
+  .list {
+    background-color: #fff;
+  }
+  .list .iron-selected {
+    background-color: #CCCCFF;
+  }
+  .item {
+    padding-left: 50px;
+    font-size: 15px;
+    min-height: 37px !important;
+    /*color: #009688;*/
+  }
 
-        [drawer] {
-            background-color: #ffffff !important;
-        }
-
-        .category {
-            background: #009688;
-            font-size: large;
-            color: #f1f1f1;
-        }
-        .item {
-            padding-left: 50px;
-            font-size: 15px;
-            min-height: 37px !important;
-            color: #009688;
-        }
-        .list {
-            background-color: #F5F4F4;
-        }
-        .list .iron-selected {
-            background-color: #CDE5E3;
-        }
-        .list paper-item {
-            border-top: solid 1px rgba(245, 245, 245, 0.6);
-
-        }
-        .buttons {
-            font-size: 10px !important;
-            margin: 0px;
-        }
-        .current {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            font-size: 150%;
-            color: #DDD7D7;
-            margin-left: 20px;
-        }
-        paper-header-panel {
-            z-index: auto !important;
-        }
-        .paper-toast-open {
-            z-index: 10;
-        }
-        .panel {
-            padding: 20px;
-        }
-        paper-item {
-            cursor: pointer;
-            oveflow: hidden;
-            position: relative;
-        }
-        .title {
-           font-size: 135%;
-           text-align: center;
-           padding: 5px;
-        }
-    </ui:style>
+  </ui:style>
 
     <g:HTMLPanel>
-       <style is='custom-style'>
-        .iconpolymer {
-           --paper-fab-background: var(--paper-purple-500);
-        }
-        .icongwt {
-           --paper-fab-background: var(--paper-red-500);
-        }
-        .iconvaadin {
-           --paper-fab-background: var(--paper-light-blue-500);
-        }
-       </style>
 
         <p:PaperDrawerPanel ui:field="drawerPanel">
             <div drawer="">
                 <p:PaperHeaderPanel mode="seamed">
-                    <p:PaperToolbar addStyleNames="{style.toolbar} ">
-                    <p:PaperFab ui:field="logo3" icon="polymer" attributes="mini url:http://polymer-project.org" addStyleNames="iconpolymer"></p:PaperFab>
-                    <p:PaperFab ui:field="logo2" icon="polymer" attributes="mini url:http://polymer-project.org" addStyleNames="iconpolymer"></p:PaperFab>
-
+                    <p:PaperToolbar>
+                    <!--<p:PaperFab ui:field="logo3" icon="polymer" attributes="mini url:http://polymer-project.org"></p:PaperFab>-->
+                    <!--<p:PaperFab ui:field="logo2" icon="polymer" attributes="mini url:http://polymer-project.org"></p:PaperFab>-->
+                    <span>GWT Cordova</span>
                       <!--<p:PaperFab ui:field="logo2" src="img/gwt.png" attributes="mini url:http://gwtproject.org" addStyleNames="icongwt"></p:PaperFab>-->
                     <!--<p:PaperFab ui:field="logo1" src="img/vaadin.png" attributes="mini url:http://vaadin.com" addStyleNames="iconvaadin"></p:PaperFab>-->
                     </p:PaperToolbar>
                     <g:FlowPanel ui:field="listPanel" addStyleNames="{style.list}"/>
+                  <!--<g:FlowPanel ui:field="listPanel"/>-->
+
                 </p:PaperHeaderPanel>
             </div>
           <div main="">
             <p:PaperHeaderPanel mode="seamed">
-              <p:PaperToolbar addStyleNames="{style.toolbar}">
+              <p:PaperToolbar>
                 <p:PaperIconButton ui:field="menu" icon="menu" attributes="paper-drawer-toggle" />
-                <span ui:field="currentLabel" class="{style.current}"></span>
+                <span ui:field="currentLabel"></span>
                 <span class="flex"></span>
-                <p:PaperButton ui:field="help" addStyleNames="{style.buttons}"><i:IronIcon icon="help"/>About</p:PaperButton>
+                <!--<p:PaperButton ui:field="help" addStyleNames="{style.buttons}"><i:IronIcon icon="help"/>About</p:PaperButton>-->
+                <p:PaperButton ui:field="help"><i:IronIcon icon="help"/>About</p:PaperButton>
+
               </p:PaperToolbar>
-              <g:HTMLPanel ui:field="content" addStyleNames="{style.panel}"/>
+              <!--<g:HTMLPanel ui:field="content" addStyleNames="{style.panel}"/>-->
+              <g:HTMLPanel ui:field="content"/>
+
             </p:PaperHeaderPanel>
           </div>
             <!--<div main="">-->

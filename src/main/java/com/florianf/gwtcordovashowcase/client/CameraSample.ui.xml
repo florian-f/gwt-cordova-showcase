@@ -5,7 +5,7 @@
     >
 
 
-  <g:HTMLPanel addStyleNames="button-sample">
+  <g:HTMLPanel>
 
     <style is="custom-style">
       .button-sample .horizontal-section {
@@ -17,11 +17,9 @@
       }
     </style>
 
-    <div class="horizontal-section-container  center-justified layout">
       <h3>Camera Sample</h3>
 
       <p:PaperMaterial elevation="2">
-        <div class="horizontal-section">
         <p:PaperItem>
             <p:PaperButton ui:field="cameraButton" raised="true">take a picture</p:PaperButton>
         </p:PaperItem>
@@ -31,8 +29,6 @@
           <p:PaperItem>
           <img class="pic" ui:field="myImage"/>
           </p:PaperItem>
-        </div>
       </p:PaperMaterial>
-    </div>
   </g:HTMLPanel>
 </ui:UiBinder>
