@@ -130,7 +130,6 @@
         <!-- Plugin configuration. There are many available options, 
              see gwt-maven-plugin documentation at codehaus.org -->
         <configuration>
-          <jsInteropMode>JS</jsInteropMode>
           <disableCastChecking>true</disableCastChecking>
           <disableClassMetadata>true</disableClassMetadata>
           <enableAssertions>false</enableAssertions>
