@@ -33,7 +33,7 @@ public class DeviceSample extends Composite {
             devicePanel.add(new PaperItem("Something went wrong!"));
 
         } else {
-            devicePanel.add(new PaperItem("Platform: " + device.getPlatform()));
+            devicePanel.add(new PaperItem("Platform: " + device.platform()));
             devicePanel.add(new PaperItem("Cordova: " + device.getCordova()));
             devicePanel.add(new PaperItem("Manufacturer: " + device.getManufacturer()));
             devicePanel.add(new PaperItem("Model: " + device.getModel()));

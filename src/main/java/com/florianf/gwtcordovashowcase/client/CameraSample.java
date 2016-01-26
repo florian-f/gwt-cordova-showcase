@@ -36,7 +36,8 @@ public class CameraSample extends Composite {
             camera.getPicture(s -> {
                 text.setInnerText("success");
                 myImage.setSrc(s);
-            }, s -> text.setInnerText("error: " + s), new CameraOptions(){});
+                return null;
+            }, s -> { text.setInnerText("error: " + s); return null; }, new CameraOptions(){});
         });
     }
 }

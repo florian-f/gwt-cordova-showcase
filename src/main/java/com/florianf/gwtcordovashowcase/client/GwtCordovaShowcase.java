@@ -8,8 +8,9 @@ import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.vaadin.polymer.Polymer;
-import com.vaadin.polymer.iron.element.IronIconElement;
-import com.vaadin.polymer.paper.element.*;
+import com.vaadin.polymer.iron.IronIconElement;
+import com.vaadin.polymer.iron.widget.IronIcons;
+import com.vaadin.polymer.paper.*;
 
 import java.util.Arrays;
 
@@ -17,13 +18,7 @@ public class GwtCordovaShowcase implements EntryPoint {
 
     public void onModuleLoad() {
 
-        Cordova.init(new EventListener() {
-            @Override
-            public Object call(Event event) {
-
-                return null;
-            }
-        });
+        Cordova.init();
 
 //        Polymer.importHref(Arrays.asList(
 //                "iron-icons/iron-icons.html",
@@ -53,8 +48,8 @@ public class GwtCordovaShowcase implements EntryPoint {
                 "iron-icons/communication-icons.html",
                 "iron-flex-layout/iron-flex-layout.html",
                 "neon-animation/neon-animations.html",
-                PaperRippleElement.SRC,
                 IronIconElement.SRC,
+                PaperRippleElement.SRC,
                 PaperDrawerPanelElement.SRC,
                 PaperHeaderPanelElement.SRC,
                 PaperToolbarElement.SRC,

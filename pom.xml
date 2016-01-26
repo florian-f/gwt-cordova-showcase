@@ -15,7 +15,6 @@
     <!-- Note: GWT needs at least java 1.6 -->
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <gwtPolymerVersion>1.0.2.0-alpha4-SNAPSHOT</gwtPolymerVersion>
 
   </properties>
 
@@ -81,12 +80,12 @@
       <scope>provided</scope>
     </dependency>
 
-    <dependency>
-      <groupId>com.vaadin.polymer</groupId>
-      <artifactId>vaadin-gwt-polymer-elements</artifactId>
-      <version>${gwtPolymerVersion}</version>
-      <scope>provided</scope>
-    </dependency>
+      <dependency>
+        <groupId>com.vaadin.polymer</groupId>
+        <artifactId>vaadin-gwt-polymer-elements</artifactId>
+        <version>1.2.3.0</version>
+        <scope>provided</scope>
+      </dependency>
 
     <!--gwtcordova-->
     <dependency>
