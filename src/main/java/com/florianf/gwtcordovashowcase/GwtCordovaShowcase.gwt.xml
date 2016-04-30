@@ -5,7 +5,7 @@
 <module rename-to="gwtcordovashowcase">
 
   <inherits name='com.google.gwt.user.User'/>
-  <inherits name="com.vaadin.polymer.Elements"/>
+  <!--<inherits name="com.vaadin.polymer.Elements"/>-->
   <inherits name="com.florianf.gwtcordova.GwtCordova"/>
 
   <entry-point class='com.florianf.gwtcordovashowcase.client.GwtCordovaShowcase'/>

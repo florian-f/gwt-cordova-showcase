@@ -1,34 +1,28 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:g='urn:import:com.google.gwt.user.client.ui'
-             xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
-             xmlns:i='urn:import:com.vaadin.polymer.iron.widget'
-    >
+xmlns:u="urn:import:com.google.gwt.user.client.ui"
+>
 
 
   <g:HTMLPanel>
 
-    <style is="custom-style">
-      .button-sample .horizontal-section {
-      min-width: 130px;
-      }
+    <!--<style is="custom-style">-->
+      <!--.button-sample .horizontal-section {-->
+      <!--min-width: 130px;-->
+      <!--}-->
 
-      .pic {
-      width: 100%;
-      }
-    </style>
+      <!--.pic {-->
+      <!--max-width: 50%;-->
+      <!--max-height: 50%;-->
+      <!--}-->
+    <!--</style>-->
 
       <h3>Camera Sample</h3>
 
-      <p:PaperMaterial elevation="2">
-        <p:PaperItem>
-            <p:PaperButton ui:field="cameraButton" raised="true">take a picture</p:PaperButton>
-        </p:PaperItem>
-          <p:PaperItem>
+      <p style="max-width: 50%; max-height: 50%">
+            <u:Button ui:field="cameraButton">take a picture</u:Button>
             <span ui:field="text"></span>
-          </p:PaperItem>
-          <p:PaperItem>
-          <img class="pic" ui:field="myImage"/>
-          </p:PaperItem>
-      </p:PaperMaterial>
+          <img class="pic"  ui:field="myImage"></img>
+      </p>
   </g:HTMLPanel>
 </ui:UiBinder>
