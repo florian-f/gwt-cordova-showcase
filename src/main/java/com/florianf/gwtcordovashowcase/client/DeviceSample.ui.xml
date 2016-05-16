@@ -1,12 +1,8 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:g='urn:import:com.google.gwt.user.client.ui'
-    >
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
 
   <g:HTMLPanel>
-    <!--<div>-->
       <h3>Device</h3>
-      <!--<div class="list short">-->
-    <!--<g:FlowPanel ui:field="listPanel" addStyleNames="{style.list}"/>-->
     <g:VerticalPanel ui:field="devicePanel">
     </g:VerticalPanel>
   </g:HTMLPanel>

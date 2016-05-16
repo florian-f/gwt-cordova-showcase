@@ -1,29 +1,27 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:g='urn:import:com.google.gwt.user.client.ui'
->
-
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
 
   <g:HTMLPanel>
 
     <style is="custom-style">
     </style>
 
-      <h3>Lifecycle Events</h3>
-      <g:VerticalPanel>
-        <div>
-            <p>
-              <h4>Pause:</h4>
-            </p>
-            <p>
-              <span ui:field="pauseFired"></span>
-            </p>
-            <p>
-              <h4>Resume:</h4>
-            </p>
-            <p>
-              <span ui:field="resumeFired"></span>
-            </p>
-        </div>
-      </g:VerticalPanel>
+    <h3>Lifecycle Events</h3>
+    <g:VerticalPanel>
+      <div>
+        <p>
+          <h4>Pause:</h4>
+        </p>
+        <p>
+          <span ui:field="pauseFired"></span>
+        </p>
+        <p>
+          <h4>Resume:</h4>
+        </p>
+        <p>
+          <span ui:field="resumeFired"></span>
+        </p>
+      </div>
+    </g:VerticalPanel>
   </g:HTMLPanel>
 </ui:UiBinder>

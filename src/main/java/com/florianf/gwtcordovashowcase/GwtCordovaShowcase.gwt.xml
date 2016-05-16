@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Custom-built GWT. You probably want to uncomment the DOCTYPE and point it to your GWT checkout
-<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 0.0.0//EN" "file:///path/to/gwt/checkout/distro-source/core/src/gwt-module.dtd">
--->
+
 <module rename-to="gwtcordovashowcase">
 
   <inherits name='com.google.gwt.user.User'/>
-  <!--<inherits name="com.vaadin.polymer.Elements"/>-->
   <inherits name="com.florianf.gwtcordova.GwtCordova"/>
 
   <entry-point class='com.florianf.gwtcordovashowcase.client.GwtCordovaShowcase'/>
@@ -16,5 +13,5 @@
 
   <set-property name="user.agent" value="safari"/>
   <collapse-all-properties value="true" />
-  <!--<inherits name="com.google.gwt.query.Query"/>-->
+
 </module>

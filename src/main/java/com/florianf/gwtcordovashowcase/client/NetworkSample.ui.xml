@@ -3,9 +3,7 @@
              xmlns:u="urn:import:com.google.gwt.user.client.ui">
 
   <g:HTMLPanel>
-    <!--<div>-->
     <h3>Network</h3>
     <u:VerticalPanel ui:field="networkPanel"/>
-
   </g:HTMLPanel>
 </ui:UiBinder>

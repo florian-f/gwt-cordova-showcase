@@ -1,10 +1,7 @@
 package com.florianf.gwtcordovashowcase.client;
 
-import com.florianf.gwtcordova.client.Cordova;
 import com.florianf.gwtcordova.client.plugin.device.Device;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.*;
@@ -20,8 +17,6 @@ public class DeviceSample extends Composite {
 
     private static DeviceSampleUiBinder deviceSampleUiBinder = GWT.create(DeviceSampleUiBinder.class);
 
-//    Device device;
-
     @UiField
     VerticalPanel devicePanel;
     Label errorLabel = new Label("Something went wrong!");
@@ -36,12 +31,7 @@ public class DeviceSample extends Composite {
     }
 
     public void retry() {
-//        device = Cordova.getDevice();
-//        device = new Device();
-//        if (device == null) {
-//            devicePanel.add(errorLabel);
-//            devicePanel.add(retryButton);
-//        } else {
+
         String available;
         String platform;
         String version;
@@ -49,6 +39,7 @@ public class DeviceSample extends Composite {
         String cordova;
         String model;
         String manufacturer;
+
         try {
             platform = Device.getPlatform();
             available = Device.getAvailable();
@@ -73,16 +64,5 @@ public class DeviceSample extends Composite {
         devicePanel.add(new Label("Uuid: " + uuid));
         devicePanel.add(new Label("Available: " + available));
         devicePanel.add(new Label("Version: " + version));
-
-
-
-//            devicePanel.add(new Label("Platform: " + device.getPlatform()));
-//            devicePanel.add(new Label("Cordova: " + device.getCordova()));
-//            devicePanel.add(new Label("Manufacturer: " + device.manufacturer()));
-//            devicePanel.add(new Label("Model: " + device.model()));
-//            devicePanel.add(new Label("Cordova: " + device.getCordova()));
-//            devicePanel.add(new Label("Manufacturer: " + device.getManufacturer()));
-//            devicePanel.add(new Label("Model: " + device.getModel()));
-//        }
     }
 }

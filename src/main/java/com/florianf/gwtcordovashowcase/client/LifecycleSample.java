@@ -1,6 +1,5 @@
 package com.florianf.gwtcordovashowcase.client;
 
-import com.florianf.gwtcordova.client.widget.VolumeButton;
 import com.florianf.gwtcordova.client.widget.event.*;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.SpanElement;

@@ -6,17 +6,6 @@ xmlns:u="urn:import:com.google.gwt.user.client.ui"
 
   <g:HTMLPanel>
 
-    <!--<style is="custom-style">-->
-      <!--.button-sample .horizontal-section {-->
-      <!--min-width: 130px;-->
-      <!--}-->
-
-      <!--.pic {-->
-      <!--max-width: 50%;-->
-      <!--max-height: 50%;-->
-      <!--}-->
-    <!--</style>-->
-
       <h3>Camera Sample</h3>
 
       <p style="max-width: 50%; max-height: 50%">
