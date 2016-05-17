@@ -138,7 +138,12 @@
             <module>com.florianf.gwtcordovashowcase.GwtCordovaShowcase</module>
           </modules>
           <!-- URL that should be opened by DevMode (gwt:run). -->
-          <runTarget>GwtCordovaShowcase.html</runTarget>
+          <runTarget>index.html</runTarget>
+          <bindAddress>0.0.0.0</bindAddress>
+          <copyWebapp>true</copyWebapp>
+          <warSourceDirectory>${basedir}/src/main/webapp_sdm</warSourceDirectory>
+          <workDir>${basedir}/target/sdm_workdir</workDir>
+          <launcherDir>${basedir}/sdm_launch</launcherDir>
           <!-- Ask GWT to create the Story of Your Compile (SOYC) (gwt:compile) -->
           <compileReport>true</compileReport>
           <compilerMetrics>true</compilerMetrics>
