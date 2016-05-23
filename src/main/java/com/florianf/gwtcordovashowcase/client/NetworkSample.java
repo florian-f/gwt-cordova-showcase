@@ -22,7 +22,7 @@ public class NetworkSample extends Composite {
     
     public NetworkSample() {
         initWidget(ourUiBinder.createAndBindUi(NetworkSample.this));
-        Connection connection = Cordova.getConnection();
+        Connection connection = new Connection();//Cordova.getConnection();
         if (connection == null) {
             networkPanel.add(new Label("Something went wrong!"));
 
