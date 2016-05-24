@@ -11,7 +11,7 @@ xmlns:u="urn:import:com.google.gwt.user.client.ui"
       <p style="max-width: 50%; max-height: 50%">
             <u:Button ui:field="cameraButton">take a picture</u:Button>
             <span ui:field="text"></span>
-          <img class="pic"  ui:field="myImage"></img>
+          <img class="pic"  ui:field="image"></img>
       </p>
   </g:HTMLPanel>
 </ui:UiBinder>

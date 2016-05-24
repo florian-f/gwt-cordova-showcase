@@ -19,7 +19,7 @@ public class CameraSample extends Composite {
     @UiField
     Button cameraButton;
     @UiField
-    ImageElement myImage;
+    ImageElement image;
     @UiField
     SpanElement text;
 
@@ -28,15 +28,12 @@ public class CameraSample extends Composite {
     public CameraSample() {
         initWidget(ourUiBinder.createAndBindUi(CameraSample.this));
         cameraButton.addClickHandler(clickEvent -> {
-
             CameraOptions cameraOptions = new CameraOptions();
-//            cameraOptions.setDestinationType(CameraConstants.DestinationType.DATA_URL);
-//            cameraOptions.setCameraDirection(CameraConstants.Direction.FRONT);
             cameraOptions.setDestinationType(CameraConstants.DestinationType.FILE_URI);
             Camera.getPicture(s -> {
                 text.setInnerText("success");
-                myImage.setSrc(s);
-                myImage.setAttribute("style", "max-width: 50%; max-height: 50%");
+                image.setSrc(s);
+                image.setAttribute("style", "max-width: 50%; max-height: 50%");
 
                 return null;
 
