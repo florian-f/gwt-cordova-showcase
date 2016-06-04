@@ -4,6 +4,8 @@
 
   <inherits name='com.google.gwt.user.User'/>
   <inherits name="com.florianf.gwtcordova.GwtCordova"/>
+  <inherits name="com.florianf.gwtcordova.Camera"/>
+  <inherits name="com.florianf.gwtcordova.Device"/>
 
   <entry-point class='com.florianf.gwtcordovashowcase.client.GwtCordovaShowcase'/>
 

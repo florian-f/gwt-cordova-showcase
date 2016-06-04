@@ -1,6 +1,6 @@
 package com.florianf.gwtcordovashowcase.client;
 
-import com.florianf.gwtcordova.client.Cordova;
+import com.florianf.gwtcordova.client.base.Cordova;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;

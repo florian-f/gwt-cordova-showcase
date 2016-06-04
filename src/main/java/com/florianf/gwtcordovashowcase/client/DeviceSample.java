@@ -1,6 +1,6 @@
 package com.florianf.gwtcordovashowcase.client;
 
-import com.florianf.gwtcordova.client.Cordova;
+import com.florianf.gwtcordova.client.base.Cordova;
 import com.florianf.gwtcordova.client.myelemental.Event;
 import com.florianf.gwtcordova.client.myelemental.EventListener;
 import com.florianf.gwtcordova.client.plugin.device.Device;

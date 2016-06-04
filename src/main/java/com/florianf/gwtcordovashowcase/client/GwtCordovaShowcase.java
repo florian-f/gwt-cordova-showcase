@@ -1,6 +1,6 @@
 package com.florianf.gwtcordovashowcase.client;
 
-import com.florianf.gwtcordova.client.Cordova;
+import com.florianf.gwtcordova.client.base.Cordova;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.RootPanel;
 
