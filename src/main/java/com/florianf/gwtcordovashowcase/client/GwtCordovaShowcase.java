@@ -1,13 +1,14 @@
 package com.florianf.gwtcordovashowcase.client;
 
 import com.florianf.gwtcordova.client.base.Cordova;
+import com.florianf.gwtcordova.client.elemental.Document;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.RootPanel;
 
 public class GwtCordovaShowcase implements EntryPoint {
 
     public void onModuleLoad() {
-        Cordova.init(event -> startApplication());
+        Document.addEventListener("deviceready", event -> startApplication());
     }
 
     private void startApplication() {

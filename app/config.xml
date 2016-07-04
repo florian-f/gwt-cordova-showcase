@@ -1,13 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.gwtcordova.showcase" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>HelloCordova</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        GWT Cordova Showcase
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
+    <author email="florianfriemel@gmail.com">
         Apache Cordova Team
     </author>
-    <content src="http://192.168.0.17:8888/index.html" />
+    <!--<content src="http://192.168.0.10:8888/index.html" />-->
+    <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

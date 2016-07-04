@@ -6,6 +6,7 @@
   <inherits name="com.florianf.gwtcordova.GwtCordova"/>
   <inherits name="com.florianf.gwtcordova.Camera"/>
   <inherits name="com.florianf.gwtcordova.Device"/>
+  <inherits name="com.florianf.gwtcordova.Network"/>
 
   <entry-point class='com.florianf.gwtcordovashowcase.client.GwtCordovaShowcase'/>
 

@@ -22,14 +22,9 @@ public class NetworkSample extends Composite {
     
     public NetworkSample() {
         initWidget(ourUiBinder.createAndBindUi(NetworkSample.this));
-        Connection connection = new Connection();//Cordova.getConnection();
-        if (connection == null) {
-            networkPanel.add(new Label("Something went wrong!"));
 
-        } else {
-            networkPanel.add(new Label("Connection Type: " + connection.getType()));
-            networkPanel.add(new Label("On Mobile Data? " + connection.onMobileData()));
-            networkPanel.add(new Label("On WiFi? " + connection.onWifi()));
-        }
+            networkPanel.add(new Label("Connection Type: " + Connection.getType()));
+            networkPanel.add(new Label("On Mobile Data? " + Connection.onMobileData()));
+            networkPanel.add(new Label("On WiFi? " + Connection.onWifi()));
     }
 }

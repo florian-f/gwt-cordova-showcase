@@ -1,6 +1,6 @@
 package com.florianf.gwtcordovashowcase.client;
 
-import com.florianf.gwtcordova.client.widget.event.*;
+import com.florianf.gwtcordova.client.elemental.Document;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.SpanElement;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -26,10 +26,8 @@ public class LifecycleSample extends Composite {
 
         initWidget(ourUiBinder.createAndBindUi(LifecycleSample.this));
 
-        CordovaEvents cordovaEvents = new CordovaEvents();
+        Document.addEventListener("pause", pauseEvent -> pauseFired.setInnerText(" " + ++pauseCount));
 
-        cordovaEvents.addPauseHandler(pauseEvent -> pauseFired.setInnerText(" " + ++pauseCount));
-
-        cordovaEvents.addResumeHandler(resumeEvent -> resumeFired.setInnerText(" " + ++resumeCount));
+        Document.addEventListener("resume", resumeEvent -> resumeFired.setInnerText(" " + ++resumeCount));
     }
 }
